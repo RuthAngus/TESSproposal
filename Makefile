@@ -14,7 +14,7 @@ all: ${NAME}.pdf
 	bibtex ${NAME}
 	${LATEX} $<
 	${LATEX} $<
-	open ${NAME}.pdf
+	#open ${NAME}.pdf
 
 clean:
 	${RM} $(foreach suff, ${TMP_SUFFS}, ${NAME}.${suff})
