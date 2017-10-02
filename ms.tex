@@ -131,22 +131,106 @@ age-dating system.
 \section{Scientific Justification}
 \subsection{Rotation period bimodality}
 
-\citet{McQuillan2014} demonstrated a striking discontinuity in the rotation
-periods of Kepler M dwarfs.
-They revealed a bimodal distribution of period, with a gap that depends on
-mass.
-Plenty of stars had rotation periods just shorter and just longer than this,
-but very few had rotation periods around this value.
-More recently, Davenport (2017) used Gaia data to elucidate this behaviour by
-re-examining the Kepler rotation periods reported in McQuillan et al. (2014)
-as a function of mass.
-Davenport (2017) eliminated contaminating giants identified using Gaia
-parallaxes, i.e. stars that are too bright to be
-dwarfs given their distance.
-These decontaminated data revealed that the period bimodality was not simply a
-feature of M dwarfs but extended to the G and K stars.
-Clearly then, this bimodal rotation period distribution is does not only
-affect M dwarfs, but may be a feature of all stars, including the Sun.
+One of the most remarkable results from the Kepler rotation period catalog was
+the discovery of a bimodal period distribution among field stars by McQuillan
+et al. (2013), which is shown
+in Figure \ref{davenport}.
+While a separate sequence of rapid rotation periods had been known in young
+stellar clusters due to lower-mass stars settling on to the angular momentum
+main sequence slower \citep[\eg][]{barnes2007}, this new bimodality was
+detected from slower rotating M dwarfs (T_$\mathrm{eff} <$ 4000).
+The bimodality separated M dwarfs into two populations, those with rotation
+periods longer than $\sim$ 20 days, and those with periods between $\sim$ 1
+and 20 days.
+Follow-up analysis of the Kepler data by \citet{mcquillan2014} found the
+period bimodality extended to include K dwarfs.
+Recently, Co-I Davenport discovered this period bimodality extends throughout
+all masses in the Kepler rotation sample for nearby stars, as shown in Figure
+\ref{davenport} \citep{davenport2017}.
+Two formation scenarios have been proposed to explain the observed period
+bimodality.
+The first scenario, initially proposed by \citet{mcquillan2013}, is the
+rotation period distribution reflects the local star formation history, and
+thus the bimodality represents a drop in the star formation rate around 600
+Myr ago.
+This model is supported by both the extension of the bimodality to earlier
+spectral types by \citet{davenport2017}, and also the tentative detection that
+the two rotation period populations have distinct proper motion distributions.
+However, such a variation in the star formation rate on short timescales has
+some tension with independent observational efforts to determine the local
+star formation history.
+While Color–Magnitude diagram inversions from Hipparcos have suggested a
+similarly short timescale variation in star formation of $\sim$ 0.5 Gyr
+\citep{hernandez2000}, other studies find slower variations over several
+Gyr \citep[\eg][]{cignoni2006}.
+Using white dwarf cooling models to infer the local formation history
+(“cosmochronology”) also supports higher star formation several Gyr ago, but
+can rarely achieve age resolution better than $\sim$ 1 Gyr due to small sample
+sizes \citep{tremblay2014}.
+The spatial extent of such coherent and localized variations in star formation
+history is unknown.
+The second scenario to explain this feature is that the period bimodality
+occurs due to a previously unknown variation in the spin-down evolution for
+low-mass stars.
+In this model the star formation history would be continuous over the past
+$\sim$ 1 Gyr, and around 600 Myr stars would move quickly through the observed
+period minima due to this unknown phase transition or feedback mechanism.
+While this model is not predicted by angular momentum loss prescriptions,
+rapid transitions in rotation period are observed for stars in young clusters.
+Stars move quickly from the rapidly rotating “convective” sequence (periods of
+$\sim<1$ day) to the “interface” sequence (periods of several days) during the
+first few hundred Myr, with lower mass stars taking longer to make this
+transition as they settle onto the main sequence \citep{barnes2003}.
+Secondly, a gap in chromospheric activity levels for solar-type field stars
+has also been observed \citep{vaughan1980}.
+While this magnetic activity indicator smoothly varies with stellar ages over
+long timescales, the gap indicates a rapid transition phase from “active” to
+“inactive” is present within the first Gyr \citep{pace2009}.
+Thirdly, the angular momentum loss underpinning gyrochronology seems to slow
+for stars older than the Sun, indicating a potential change in the magnetic
+dynamo for slower rotators \citep{angus2015, vansaders2016}.
+The K2 rotation period sample provides the ideal dataset to test these two
+formation scenarios.
+If the bimodality is due to an age distribution we would expect to only see
+the feature locally, and that it could disappear at further distances or along
+different lines of sight where small scale variations in the star formation
+history are less apparent.
+Coherent changes in the rotation period (or stellar age) distribution along
+lines of sight might also reveal details of the spiral arm pattern speed near
+the Sun.
+The kinematic separation between the two rotation period populations would be
+reinforced by supplemental measurements from the upcoming public Gaia data
+releases.
+However, if the bimodality is truly due to a transition point in the spin-down
+evolution at young ages, we would expect to find no little to no variation in
+this feature as seen in Figure 2b with galactic position, distance, or between
+K2 fields.
+lines of sight might also reveal details of the spiral arm pattern speed near
+the Sun.
+The kinematic separation between the two rotation period populations would be
+reinforced by supplemental measurements from the upcoming public Gaia data
+releases.
+However, if the bimodality is truly due to a transition point in the spin-down
+evolution at young ages, we would expect to find no little to no variation in
+this feature as seen in Figure 2b with galactic position, distance, or between
+K2 fields.
+
+% \citet{McQuillan2014} demonstrated a striking discontinuity in the rotation
+% periods of Kepler M dwarfs.
+% They revealed a bimodal distribution of period, with a gap that depends on
+% mass.
+% Plenty of stars had rotation periods just shorter and just longer than this,
+% but very few had rotation periods around this value.
+% More recently, Davenport (2017) used Gaia data to elucidate this behaviour by
+% re-examining the Kepler rotation periods reported in McQuillan et al. (2014)
+% as a function of mass.
+% Davenport (2017) eliminated contaminating giants identified using Gaia
+% parallaxes, i.e. stars that are too bright to be
+% dwarfs given their distance.
+% These decontaminated data revealed that the period bimodality was not simply a
+% feature of M dwarfs but extended to the G and K stars.
+% Clearly then, this bimodal rotation period distribution is does not only
+% affect M dwarfs, but may be a feature of all stars, including the Sun.
 
 \begin{figure}
 \begin{center}
@@ -158,7 +242,7 @@ the subset of these stars that also feature in the TGAS Gaia DR1 catalogue in
 blue. Contaminating giants have been removed from the blue sample and the
 rotation period bimodality is revealed to exist across all temperatures shown.
     The red line is a 600 Myr rotational isochrone (also known as a gyrochrone).}
-\label{fig:sip_hist}
+\label{fig:davenport}
 \end{center}
 \end{figure}
 
