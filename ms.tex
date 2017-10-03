@@ -333,6 +333,41 @@ variations are sinusoidal in shape.
 In the low amplitude and long period cases however, care is needed to separate
 real astrophysical signal from instrumental systematics.
 
+The measurement of rotation periods is less sensitive to crowding and source
+confusion than exoplanet transit characterization because the rotation period
+is not effected by photometric dilution.
+We will apply two complementary methods to extract and calibrate light curves
+from the TESS FFIs.
+First, for bright or isolated targets, we will follow \citet{montet2017} to
+estimate aperture shapes and perform aperture photometry for bright sources.
+Using an ensemble of sources, we will de-trend these light curves using a
+modified version of \textsf{everest} \citep{luger2016, luger2017} designed to
+preserve photometric signatures of rotation.
+This will be achieved by fitting for the systematic effects in the light curve
+using the \textsf{everest} model simultaneously with a Gaussian Process model
+for the astrophysical variation.
+Both \citet{aigrain2016b} and \citet{luger2016} demonstrated that this can
+preserve stellar variability signals and we will use the \textsf{celerite}
+algorithm \citep{dfm2017} to scale the computations to the size of TESS FFI
+datasets.
+
+The precision of existing photometric de-trending methods degrades in crowded
+fields \citep[for example,][]{luger2017}.
+However, to make robust measurements of rotation periods, we do not need
+absolutely calibrated light curves.
+Therefore, in crowded fields, we will apply a difference imaging method that
+was developed for the K2 Campaign 9 microlensing project \citep{henderson2016}
+based on the \textsf{CPM} \citep{wang2016} to robustly measure the photometric
+variations of crowded sources.
+Unlike standard difference imaging methods, this procedure does not require a
+reference image.
+Instead, a causal data-driven model is built to predict the time series in
+every pixel taking systematic effects into account and the residuals between
+the observations and the model predictions provide an estimate of the
+astrophysical variability in each pixel.
+We will tune this method preserve rotation signals and apply it to detect
+rotation across the FFIs.
+
 
 \begin{figure}
 \begin{center}
