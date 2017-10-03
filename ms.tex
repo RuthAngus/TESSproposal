@@ -107,8 +107,8 @@ flux modulations for hundreds of stars from the ground, space-based
 photometric surveys have opened the door to homogeneous ensemble measures of
 stellar rotation, and therefore age.
 Using precise light curves available from the TESS mission, we hope to
-infer ages for nearly 100,000 main sequence field stars, including thousands
-of planet hosts.
+infer ages for nearly 100,000 main sequence field stars, including a few
+hundred planet hosts.
 The ages of the planet hosts will allow us to characterize trends in planet
 properties over time.
 
@@ -122,14 +122,12 @@ To enable studies of stellar ages and magnetic activity from rotation periods
 with TESS, we propose to:
 1. Measure accurate rotation periods for every available TESS FFI and
 two-minute cadence target.
-2. Produce updated gyrochronology relations based on a wider range of field
-star ages.
-3. Determine the origin of the mysterious rotation period bimodality
+2. Determine the origin of the mysterious rotation period bimodality
 discovered with Kepler by tracing the rotation period distribution over the
 whole sky, and out to further distances utilizing public Gaia data.
-4. Measure the star formation history across the sky using a new Bayesian
+3. Measure the star formation history across the sky using a new Bayesian
 age-dating system.
-5. Further characterize the intrinsic uncertainty in gyrochronology ages using
+4. Further characterize the intrinsic uncertainty in gyrochronology ages using
 comoving pairs identified in the first Gaia data release.
 
 \section{Scientific Justification}
@@ -262,14 +260,37 @@ Although this effect reduces the usefulness of gyrochronology for stars more
 massive than the Sun, in practise, for Solar-mass stars, down to M dwarfs with
 masses greater than 0.35$M_\odot$, gyrochronology can still be considered an
 effective dating method.
-This will include a large number of \TESS\ planet candidates.
 
-We intend to use the rotation periods of planet hosting stars to infer the
-age-dependence of planet frequency.
-Kepler alone has not yet produced a sufficient number of stars with rotation
-periods to reliably characterise the time-dependent frequency of exoplanets.
+{\bf We will use the rotation periods of TESS field dwarfs to calibrate the
+gyrochronology relations using galactic kinematics}.
+Many stars in the TESS CTL will also have proper motions, parallaxes,
+positions and radial velocities published in the second \Gaia\ data release.
+These parameters provide the information necessary to calculate both
+galactocentric positions and action angles of the stars, both of which are age
+indicators.
+Vertical action (angular momentum through the plane of the Milky Way)
+increases over time due to orbital heating and has been demonstrated to
+increase with age \citep[\eg][]{west2011}.
+Galactocentric position can also determine a star's age, since different
+stellar populations, thin or thick disk, halo and bulge have different average
+ages.
+PI Angus is currently using the \kepler\ rotation periods of stars in the
+first \Gaia\ data release to calibrate the relations between rotation period
+and vertical action dispersion, two tracers of age.
+Since this relation is likely vary with both galactic longitude and latitude,
+the rotation periods produced from \TESS\ light curves will enable a
+comprehensive, all-sky calibration of these relations.
+Since one of the few ways to accurately age-date fully convective, late M
+dwarfs is via kinematics, these new relations will help to infer ages for all
+stars with M$<$ 0.35M$_\odot$.
+
+{\bf We will use the rotation periods of planet hosting stars to infer
+the age-dependence of planet frequency.}j Kepler alone has not yet produced a
+sufficient number of stars with rotation periods to reliably characterise the
+time-dependent frequency of exoplanets.
 Mann et al. (2016a), Mann et al. (2016b) and Rizzuto et al. (2017) detected
 transiting exoplanets in four young open clusters observed by the K2 mission.
+
 
 \section{Measuring Rotation Periods}
 In this era of large photometric surveys (Kepler/K2, TESS, WFIRST, LSST, PTF,
