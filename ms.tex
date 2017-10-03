@@ -48,14 +48,11 @@
 \title{Investigating magnetic dynamo evolution with TESS field dwarfs}
 
 \author{R. Angus\altaffilmark{\columbia}
-% \altaffilmark{\simons}
         J. R. Davenport\altaffilmark{\ww}
-% \altaffilmark{\nsf},
-        D. Busazi\altaffilmark{\florida},
         D. Foreman-Mackey\altaffilmark{\cca},
-        A. Mann\altaffilmark{\columbia}
-% \altaffilmark{\hubble},
         S. Oh\altaffilmark{\princeton},
+        D. Busazi\altaffilmark{\florida},
+        A. Mann\altaffilmark{\columbia}
         D. Kipping\altaffilmark{\columbia}
 }
 
@@ -72,26 +69,9 @@ New York, NY}
 
 \section{Introduction}
 
-Galactic archaeology and exoplanet populations are two rapidly accelerating
-fields of interest within astronomy.
-Although seemingly unconnected, these fields are linked by a mutual
-requirement for precise stellar parameters.
-To galactic archaeologists, ages and elemental abundances are the most
-important parameters.
-Indeed, most galactic archaeology surveys target exactly these properties.
-For exoplaneteers, masses and radii have historically been the most important
-stellar parameters for understanding planetary systems.
-With a growing number of planet hosts with precise masses and radii, attention
-is turning toward other parameters, such as ages, to understand the history
-and evolution of these systems.
-Age is therefore a fundamental stellar parameter of great interest to at least
-two large communities of astronomers.
-Unfortunately however, it is a difficult attribute to measure for main sequence
-F, G, K, and M stars in the field, in part because low-mass dwarfs do not move
-far on the Color-Magnitude diagram (CMD) during their hydrogen burning
-lifetimes.
-Further, competing stellar evolution models predict different ages for the
-same star.
+Age is a fundamental stellar parameter of great interest to at galactic
+archaeologists and exoplaneteers alike but unfortunately it is a difficult
+attribute to measure for main sequence F, G, K, and M stars in the field.
 Of the measurable properties for a large ensemble of field stars, rotation
 periods contain the most information about stellar age, and provide the best
 leverage for advancing our knowledge of galactic archeology as well as
@@ -106,20 +86,23 @@ While rotation periods have previously been measured from starspot-induced
 flux modulations for hundreds of stars from the ground, space-based
 photometric surveys have opened the door to homogeneous ensemble measures of
 stellar rotation, and therefore age.
-Using precise light curves available from the TESS mission, we hope to
-infer ages for nearly 100,000 main sequence field stars, including a few
-hundred planet hosts.
-The ages of the planet hosts will allow us to characterize trends in planet
-properties over time.
+Using precise light curves available from the TESS mission, we expect to
+measure the rotation periods of around ... stars.
+Many of these rotation periods will be convertible into ages as they will be
+intermediate age FGK and early M dwarfs.
+Of particular interest will be the expected ~300 gyrochronal ages of exoplanet
+host stars.
+The gyrochronal ages of these planet hosts, combined with their isochronal and
+kinematic ages will allow us to characterize trends in planet properties over
+time and across the galaxy.
 
 Additionally, as rotation both influences and is influenced {\it by} stellar
 magnetic fields, it is inextricably related to stellar activity.
-With so many TESS targets being M dwarfs which tend to be particularly active,
-understanding the magnetic behavior of these stars has never been more
+With so many \TESS\ targets being M dwarfs which tend to be particularly
+active, understanding the magnetic behavior of these stars has never been more
 important.
 
-To enable studies of stellar ages and magnetic activity from rotation periods
-with TESS, we propose to:
+We propose to:
 1. Measure accurate rotation periods for every available TESS FFI and
 two-minute cadence target.
 2. Determine the origin of the mysterious rotation period bimodality
@@ -129,6 +112,8 @@ whole sky, and out to further distances utilizing public Gaia data.
 age-dating system.
 4. Further characterize the intrinsic uncertainty in gyrochronology ages using
 comoving pairs identified in the first Gaia data release.
+5. Infer the distribution of exoplanets as a function of time and galactic
+position.
 
 \section{Scientific Justification}
 \subsection{Rotation period bimodality}
@@ -136,11 +121,7 @@ comoving pairs identified in the first Gaia data release.
 One of the most remarkable results from the Kepler rotation period catalog was
 the discovery of a bimodal period distribution among field stars by
 \citet{mcquillan2013}, which is shown in Figure \ref{fig:davenport}.
-While a separate sequence of rapid rotation periods had been known in young
-stellar clusters due to lower-mass stars settling on to the angular momentum
-main sequence slower \citep[\eg][]{barnes2007}, this new bimodality was
-detected from slower rotating M dwarfs (T$_\mathrm{eff} <$ 4000).
-The bimodality separated M dwarfs into two populations, those with rotation
+The bimodality separats M dwarfs into two populations, those with rotation
 periods longer than $\sim$ 20 days, and those with periods between $\sim$ 1
 and 20 days.
 Follow-up analysis of the Kepler data by \citet{mcquillan2014} found the
@@ -148,19 +129,18 @@ period bimodality extended to include K dwarfs.
 Recently, Co-I Davenport discovered this period bimodality extends throughout
 all masses in the Kepler rotation sample for nearby stars, as shown in Figure
 \ref{fig:davenport} \citep{davenport2017}.
-Two formation scenarios have been proposed to explain the observed period
-bimodality.
-The first scenario, initially proposed by \citet{mcquillan2013}, is the
+Two scenarios have been proposed to explain the observed period bimodality.
+In the first scenario, initially proposed by \citet{mcquillan2013}, the
 rotation period distribution reflects the local star formation history, and
 thus the bimodality represents a drop in the star formation rate around 600
 Myr ago.
 This model is supported by both the extension of the bimodality to earlier
-spectral types by \citet{davenport2017}, and also the tentative detection that
-the two rotation period populations have distinct proper motion distributions.
-However, such a variation in the star formation rate on short timescales has
-some tension with independent observational efforts to determine the local
-star formation history.
-While Color–Magnitude diagram inversions from Hipparcos have suggested a
+spectral types by \citet{davenport2017}, and also the tentative evidence for
+two distinct proper motion distributions.
+However, such a variation in the star formation rate on short timescales is in
+tension with independent observational efforts to determine the local star
+formation history.
+While color–magnitude diagram inversions from Hipparcos have suggested a
 similarly short timescale variation in star formation of $\sim$ 0.5 Gyr
 \citep{hernandez2000}, other studies find slower variations over several
 Gyr \citep[\eg][]{cignoni2006}.
@@ -170,12 +150,11 @@ can rarely achieve age resolution better than $\sim$ 1 Gyr due to small sample
 sizes \citep{tremblay2014}.
 The spatial extent of such coherent and localized variations in star formation
 history is unknown.
-The second scenario to explain this feature is that the period bimodality
-occurs due to a previously unknown variation in the spin-down evolution for
-low-mass stars.
-In this model the star formation history would be continuous over the past
+The second scenario explaining this feature is a previously unknown variation
+in the spin-down evolution for low-mass stars.
+In this model, the star formation history would be continuous over the past
 $\sim$ 1 Gyr, and around 600 Myr stars would move quickly through the observed
-period minima due to this unknown phase transition or feedback mechanism.
+period minima due to some phase transition or feedback mechanism.
 While this model is not predicted by angular momentum loss prescriptions,
 rapid transitions in rotation period are observed for stars in young clusters.
 Stars move quickly from the rapidly rotating “convective” sequence (periods of
@@ -192,32 +171,22 @@ for stars older than the Sun, indicating a potential change in the magnetic
 dynamo for slower rotators \citep{angus2015, van-saders2016}.
 
 The TESS FFI and CTL targets will provide the ideal dataset to test these two
-formation scenarios.
-If the bimodality is due to an age distribution we would expect only to see
-the feature locally; it could disappear at greater distances or along
-different lines of sight where small scale variations in the star formation
-history are less apparent.
+scenarios explaining the appearance of a period bimodality.
+If the bimodal period distribution reflects a age discontinuous age
+distribution, the feature should be local; it could
+disappear at greater distances or along different lines of sight.
 However, if the bimodality is truly due to a transition point in the spin-down
-evolution at young ages, we would expect to find no little to no variation in
-this feature as seen in Figure \ref{fig:davenport} with galactic position.
+evolution at young ages, there should be little to no variation in the feature
+with galactic position.
 
 To map the rotation period distribution as a function of galactocentric
 position we will match the TESS FFI and CTL targets to the upcoming data
 release from the Gaia mission \citep{perryman2001}.
 This will also allow us to remove contaminating subgiants and binary stars
 from the sample, leaving only single main sequence stars.
-The period distribution of G dwarfs is critical for this analysis since they
-are observable at greater distances, allowing us to sample different star
-formation histories.
-With the April 2018 data release from Gaia (DR2) estimate that we will be able
-to study rotation periods for G dwarfs in the TESS FFIs out to $\sim$ 3 kpc.
-Unlike \Kepler, since \TESS\ is targeting the whole sky, it will be possible
-to investigate the rotation period distribution as a function of
-galactocentric position.
-The size scale over which the Milky Way’s star formation history varies is
-unknown however significant variations in star formation histories are seen in
-Andromeda between 100 pc volumes, as well as large galaxy-wide trends
-\citep[\eg][]{lewis2015}.
+With the April 2018 data release from Gaia (DR2), we estimate that we will be
+able to study rotation periods for G dwarfs in the TESS FFIs out to $\sim$ 3
+kpc.
 
 \begin{figure}
 \begin{center}
@@ -256,12 +225,13 @@ This means a 5 Gyr star of Solar mass will have the same rotation period as a
 6 Gyr and rotation period cannot be used as an age proxy.
 The transition occurs at around Solar age for Solar mass stars but later for
 less massive stars and earlier for more massive stars.
-Although this effect reduces the usefulness of gyrochronology for stars more
-massive than the Sun, in practise, for Solar-mass stars, down to M dwarfs with
-masses greater than 0.35$M_\odot$, gyrochronology can still be considered an
-effective dating method.
+Further calibration is needed however; a lack of rotation periods and
+reliable ages for old and low-mass stars leaves a question mark hanging over
+the rotational behaviour of stars older than the Sun.
+\TESS\ will provide rotation periods for old stars that fall in the continuous
+viewing zones.
 
-{\bf We will use the rotation periods of TESS field dwarfs to calibrate the
+{\bf We will use the rotation periods of TESS field dwarfs to test the
 gyrochronology relations using galactic kinematics}.
 Many stars in the TESS CTL will also have proper motions, parallaxes,
 positions and radial velocities published in the second \Gaia\ data release.
@@ -284,13 +254,21 @@ Since one of the few ways to accurately age-date fully convective, late M
 dwarfs is via kinematics, these new relations will help to infer ages for all
 stars with M$<$ 0.35M$_\odot$.
 
+{\bf We will use the rotation periods of comoving stars identified in the
+first \Gaia\ data release to quantify the accuracy and precision of
+gyrochronology}.
+
+Although this effect reduces the applicability  of gyrochronology for stars
+more massive than the Sun, in practise, for Solar masses and below, down to
+0.35$M_\odot$, gyrochronology can still be considered an effective dating
+method.
+
 {\bf We will use the rotation periods of planet hosting stars to infer
 the age-dependence of planet frequency.}j Kepler alone has not yet produced a
 sufficient number of stars with rotation periods to reliably characterise the
 time-dependent frequency of exoplanets.
 Mann et al. (2016a), Mann et al. (2016b) and Rizzuto et al. (2017) detected
 transiting exoplanets in four young open clusters observed by the K2 mission.
-
 
 \section{Measuring Rotation Periods}
 In this era of large photometric surveys (Kepler/K2, TESS, WFIRST, LSST, PTF,
