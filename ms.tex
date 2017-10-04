@@ -1,12 +1,19 @@
-\documentclass[useAMS, usenatbib, preprint, 12pt]{aastex}
-\usepackage{cite, natbib}
-\usepackage{float}
-\usepackage{epsfig}
-\usepackage{cases}
-\usepackage[section]{placeins}
-\usepackage{graphicx, subfigure}
-\usepackage{color}
-\usepackage{bm}
+\documentclass[letterpaper,12pt,preprint]{hack_aastex}
+
+\input{dfm_stylez}
+\pagestyle{myheadings}
+\markright{\textsf{\footnotesize %
+    Investigating magnetic dynamo evolution with TESS field dwarfs}}
+
+%\documentclass[useAMS, usenatbib, preprint, 12pt]{aastex}
+%\usepackage{cite, natbib}
+%\usepackage{float}
+%\usepackage{epsfig}
+%\usepackage{cases}
+%\usepackage[section]{placeins}
+%\usepackage{graphicx, subfigure}
+%\usepackage{color}
+%\usepackage{bm}
 
 \bibliographystyle{aasjournal}
 
@@ -71,7 +78,7 @@
 % \altaffiltext{\hubble}{Hubble Fellow}
 % \altaffiltext{\princeton}{Princeton University, Princeton, NJ}
 
-\section{Introduction}
+%\paragraph{Introduction}
 
 % Age is a fundamental stellar parameter of great interest to at galactic
 % archaeologists and exoplaneteers alike but unfortunately it is a difficult
@@ -81,9 +88,9 @@ periods contain the most information about stellar age, and provide the best
 leverage for advancing our knowledge of galactic archeology as well as
 exoplanet population demographics via gyrochronology.
 Angular momentum is carried away though magnetically driven stellar winds,
-which slows the star’s rotation over cosmic time.
+which slows the star's rotation over cosmic time.
 This rotation-based `clock' is known as gyrochronology.
-Cool spots on the star’s surface rotate in-to and out-of view, creating small
+Cool spots on the star's surface rotate in-to and out-of view, creating small
 amplitude ($\pm$ 1\%) quasi-periodic changes in the stellar brightness.
 Using precise light curves available from the \TESS\ mission, we expect to
 measure the rotation periods of around ... stars.
@@ -103,7 +110,7 @@ rotation periods for all FFI and CTL stars.}
 We also intend to use gyrochronology in the cases where it {\it is} applicable
 to learn about the evolution of exoplanets across the galaxy.
 
-\section{Scientific Justification}
+\paragraph{Scientific Justification}
 
 The bimodal period distribution among field stars discovered by
 \citet{mcquillan2013}, is shown in Figure \ref{fig:davenport}.
@@ -129,19 +136,29 @@ able to study rotation periods for G dwarfs in the TESS FFIs out to $\sim$ 3
 kpc.
 
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=3in, clip=true]{Davenport.png}
-\caption{From Davenport (2017).
+\ssfigure{Davenport.png}{0.5}{%
+From Davenport (2017).
     Rotation period as a function of effective
 temperature for the full McQuillan et al., (2014) Kepler sample in black, and
 the subset of these stars that also feature in the TGAS Gaia DR1 catalogue in
 blue. Contaminating giants have been removed from the blue sample and the
 rotation period bimodality is revealed to exist across all temperatures shown.
-    The red line is a 600 Myr rotational isochrone (also known as a gyrochrone).}
+    The red line is a 600 Myr rotational isochrone (also known as a gyrochrone).
 \label{fig:davenport}
-\end{center}
-\end{figure}
+}
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=3in, clip=true]{Davenport.png}
+%\caption{From Davenport (2017).
+%    Rotation period as a function of effective
+%temperature for the full McQuillan et al., (2014) Kepler sample in black, and
+%the subset of these stars that also feature in the TGAS Gaia DR1 catalogue in
+%blue. Contaminating giants have been removed from the blue sample and the
+%rotation period bimodality is revealed to exist across all temperatures shown.
+%    The red line is a 600 Myr rotational isochrone (also known as a gyrochrone).}
+%\label{fig:davenport}
+%\end{center}
+%\end{figure}
 
 Although the classical spin-down law of \citet{skumanich1972}: Period
 $\propto$ Age$^1/2$ holds for all open clusters with measured periods, it does
@@ -213,7 +230,7 @@ field stars.
 % traditionally performed with red giants, although greater distances can be
 % reached with red giants, main sequence stars are far more numerous.
 
-\section{Technical Feasibility}
+\paragraph{Technical Feasibility}
 The extraction of a rotation period from a light curve can be as simple as
 computing a Lomb-Scargle periodogram or, in cases where the signal is less
 clear, can be inferred via modeling the correlation between data points.
@@ -267,10 +284,10 @@ rotation across the FFIs.
 % \end{center}
 % \end{figure}
 
-\section{Expected Impact}
+\paragraph{Expected Impact}
 We will provide rotation periods for all two-minute cadence and FFI targets.
 
-\section{Budget Justification}
+\paragraph{Budget Justification}
 PI Angus intends to use the budget to employ a student for 3-4 months.
 In this time the student will assist in extracting light curves from the FFIs,
 measuring rotation periods and building a rotation period catalog.
@@ -278,6 +295,10 @@ The student will also be involved in the scientific project of their choosing:
 either the rotation period bimodality, gyrochronology of low-mass stars, or
 gyrochronology of comoving pairs.
 
+\paragraph{References}
+
+{\footnotesize
 \bibliography{references}
+}
 
 \end{document}
