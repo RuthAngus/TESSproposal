@@ -24,6 +24,8 @@
 \newcommand{\gaia}{{\it Gaia}}
 \newcommand{\RAVE}{{\it RAVE}}
 \newcommand{\rave}{{\it RAVE}}
+\newcommand{\hermes}{{\it HERMES}}
+\newcommand{\HERMES}{{\it HERMES}}
 \newcommand{\Teff}{$T_{\mathrm{eff}}$}
 \newcommand{\teff}{$T_{\mathrm{eff}}$}
 \newcommand{\FeH}{[Fe/H]}
@@ -49,25 +51,25 @@
 
 \title{Investigating magnetic dynamo evolution with TESS field dwarfs}
 
-\author{R. Angus\altaffilmark{\columbia}
-        J. R. Davenport\altaffilmark{\ww}
-        D. Foreman-Mackey\altaffilmark{\cca},
-        S. Oh\altaffilmark{\princeton},
-        D. Busazi\altaffilmark{\florida},
-        A. Mann\altaffilmark{\columbia}
-        D. Kipping\altaffilmark{\columbia}
-}
+% \author{R. Angus\altaffilmark{\columbia}
+%         J. R. Davenport\altaffilmark{\ww}
+%         D. Foreman-Mackey\altaffilmark{\cca},
+%         S. Oh\altaffilmark{\princeton},
+%         D. Busazi\altaffilmark{\florida},
+%         A. Mann\altaffilmark{\columbia}
+%         D. Kipping\altaffilmark{\columbia}
+% }
 
-\altaffiltext{\columbia}{Department of Astronomy, Columbia University, New
-York, NY}
-\altaffiltext{\simons}{Simons Fellow, RuthAngus@gmail.com}
-\altaffiltext{\ww}{Western Washington University, Bellingham, WA}
-\altaffiltext{\nsf}{NSF Fellow}
-\altaffiltext{\florida}{Florida Gulf Coast University, Fort Myers, FL}
-\altaffiltext{\cca}{Center for Computational Astronomy, Flatiron Institute,
-New York, NY}
-\altaffiltext{\hubble}{Hubble Fellow}
-\altaffiltext{\princeton}{Princeton University, Princeton, NJ}
+% \altaffiltext{\columbia}{Department of Astronomy, Columbia University, New
+% York, NY}
+% \altaffiltext{\simons}{Simons Fellow, RuthAngus@gmail.com}
+% \altaffiltext{\ww}{Western Washington University, Bellingham, WA}
+% \altaffiltext{\nsf}{NSF Fellow}
+% \altaffiltext{\florida}{Florida Gulf Coast University, Fort Myers, FL}
+% \altaffiltext{\cca}{Center for Computational Astronomy, Flatiron Institute,
+% New York, NY}
+% \altaffiltext{\hubble}{Hubble Fellow}
+% \altaffiltext{\princeton}{Princeton University, Princeton, NJ}
 
 \section{Introduction}
 
@@ -85,11 +87,11 @@ Cool spots on the star’s surface rotate in-to and out-of view, creating small
 amplitude ($\pm$ 1\%) quasi-periodic changes in the stellar brightness.
 Using precise light curves available from the \TESS\ mission, we expect to
 measure the rotation periods of around ... stars.
-Most of these rotation periods will be convertible into ages as they will be
-intermediate age FGKM dwarfs.
+For many of these stars it will be possible to infer an age from their
+rotation periods via gyrochronology.
 
-Some outstanding puzzles regarding the nature of magnetic braking remain to be
-answered.
+Some outstanding mysteries regarding the nature of magnetic braking have been
+revealed, but thus-far unanswered by, \kepler.
 Firstly, a mysterious gap in the rotation period distribution of \Kepler\
 dwarfs requires either a sharp transition in magnetic dynamo geometry or a gap
 in the local star formation history as an explanation \citep{mcquillan2014,
@@ -99,23 +101,23 @@ inefficient magnetic braking at old ages in Solar-mass stars.
 {\bf We propose to help answer these questions by providing a catalog of \TESS\
 rotation periods for all FFI and CTL stars.}
 We also intend to use gyrochronology in the cases where it {\it is} applicable
-to learn about the evolution of exoplanets and the galaxy as a whole.
+to learn about the evolution of exoplanets across the galaxy.
 
 \section{Scientific Justification}
 
 The bimodal period distribution among field stars discovered by
 \citet{mcquillan2013}, is shown in Figure \ref{fig:davenport}.
 Recently, Co-I Davenport discovered this period bimodality extends throughout
-all masses in the Kepler rotation sample for nearby stars, as shown in Figure
-\ref{fig:davenport} \citep{davenport2017}.
+all masses in the Kepler rotation sample for nearby stars
+\citep{davenport2017}.
 This feature could either reflect a drop in the star formation rate around 600
 Myr ago or could be explained by a previously unknown variation in the
 spin-down evolution for low-mass stars.
 The TESS FFI and CTL targets will provide the ideal dataset to test these two
 scenarios explaining the appearance of a period bimodality.
-If the bimodal period distribution reflects a age discontinuous age
-distribution, the feature should be local; it could
-disappear at greater distances or along different lines of sight.
+If the bimodal period distribution reflects a discontinuous age distribution,
+the feature should be local and may disappear at greater distances or along
+different lines of sight.
 However, if the bimodality is truly due to a transition point in the spin-down
 evolution at young ages, there should be little to no variation in the feature
 with galactic position.
@@ -153,13 +155,13 @@ than the Sun relatively unexplored.
 \TESS\ will provide thousands of new rotation periods for both FFI and
 two-minute cadence stars, with the maximum measurable period strongly
 depending on the length of time it is observed for.
-Of particular interest are the, potentially long, rotation periods measurable
+Of particular interest are the potentially long rotation periods measurable
 for stars that fall in the continuous viewing zones.
-Many of these will have spectra from the \TESS\/HERMES survey, from which it
+Many of these will have spectra from the \TESS\ /\HERMES\ survey, from which it
 will be possible to calculate isochronal ages, enabling further calibration of
 the gyrochronology relations.
 We will also use the rotation periods of TESS field dwarfs over the whole sky
-to test the gyrochronology relations using galactic kinematics with \Gaia\.
+to test the gyrochronology relations using galactic kinematics.
 Many stars in the TESS CTL will have proper motions, parallaxes, positions and
 radial velocities published in the second \Gaia\ data release.
 These parameters provide the information necessary to calculate galactocentric
@@ -172,7 +174,7 @@ positions and action angles of the stars, both of which are age indicators.
 % comprehensive, all-sky calibration of these relations.
 Since one of the few ways to accurately age-date fully convective, late M
 dwarfs is via kinematics, these new relations will help to infer ages for all
-stars with M$<$ 0.35M$_\odot$.
+stars with M$<$ 0.35M$_\odot$, to which gyrochronology cannot be applied.
 
 In addition, we will use the rotation periods of comoving stars identified in
 the first \Gaia\ data release \citep{oh2016} to quantify the accuracy and
@@ -182,7 +184,7 @@ velocities from \RAVE\ that are observable by \TESS, using {\tt tvguide}.
 Of these, 34 stars in 17 pairs are already in the CTL list.
 Because the stars in these pairs are assumed to be recently disrupted
 binaries, we expect them to have the same age and measuring their rotation
-periods will therefore allow us to test gyrochronology.
+periods will therefore provide a test of gyrochronology.
 
 Finally, we hope to use the improved gyrochronology relations, calibrated
 using \TESS\ data to infer the dependence of planet frequency on age and
@@ -191,7 +193,8 @@ position in the galaxy.
 have larger radii and are more infrequent around young stars \citep{mann2017a,
 mann2017b, rizzuto2017}.
 Do these trends continue into older ages and do they exist in the field?
-We will answer these questions by inferring ages for \TESS\ field stars.
+We will answer these questions by measuring rotation periods for all \TESS\
+field stars.
 
 % \subsection{The age distribution of exoplanets}
 
@@ -265,8 +268,7 @@ rotation across the FFIs.
 % \end{figure}
 
 \section{Expected Impact}
-We will provide light curves and rotation periods for both the two-minute
-cadence and FFI targets.
+We will provide rotation periods for all two-minute cadence and FFI targets.
 
 \section{Budget Justification}
 PI Angus intends to use the budget to employ a student for 3-4 months.
