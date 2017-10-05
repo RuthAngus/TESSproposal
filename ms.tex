@@ -8,7 +8,7 @@
 \input{dfm_stylez}
 \pagestyle{myheadings}
 \markright{\textsf{\footnotesize %
-    Investigating rotational evolution with TESS field dwarfs}}
+    Investigating rotational evolution with TESS FFI field dwarfs}}
 
 \bibliographystyle{aasjournal}
 
@@ -94,7 +94,7 @@ all masses in the Kepler rotation sample for nearby stars
 This feature could either reflect a drop in the star formation rate around 600
 Myr ago or could be explained by a previously unknown variation in the
 spin-down evolution for low-mass stars.
-The TESS FFI and CTL targets will provide the ideal dataset to test these two
+The TESS FFI targets will provide the ideal dataset to test these two
 scenarios explaining the appearance of a period bimodality.
 If the bimodal period distribution reflects a discontinuous age distribution,
 the feature should be local and may disappear at greater distances or along
@@ -102,7 +102,7 @@ different lines of sight.
 However, if the bimodality is truly due to a transition point in the spin-down
 evolution at young ages, there should be little to no variation in the feature
 with galactic position.
-We will match the TESS FFI and CTL targets to the upcoming data
+We will match the TESS FFI targets to the upcoming data
 release from the Gaia mission \citep{perryman2001} to map the rotation period
 distribution as a function of galactocentric position.
 For the all-sky analysis we will focus on F and G stars since the 27.5 day
@@ -157,38 +157,21 @@ Many stars observable by \tess\ will have proper motions, parallaxes,
 positions and radial velocities published in the second \Gaia\ data release.
 These parameters provide the information necessary to calculate galactocentric
 positions and action angles of the stars, both of which are age indicators.
-% PI Angus is currently using the \kepler\ rotation periods of stars in the
-% first \Gaia\ data release to calibrate the relations between rotation period
-% and vertical action dispersion, two tracers of age.
-% Since this relation is likely vary with both galactic longitude and latitude,
-% the rotation periods produced from \TESS\ light curves will enable a
-% comprehensive, all-sky calibration of these relations.
 Since one of the few ways to accurately age-date fully convective, late M
 dwarfs is via kinematics, these new relations will help to infer ages for all
 stars with M$<$ 0.35M$_\odot$, to which gyrochronology cannot be applied.
-% In order to calibrate gyrochronology using rotation periods of FGK dwarfs with
-% \tess--\hermes\ spectra we propose to prioritize rotation periods of stars
-% in the CVZs with spectra, followed by those without.
 
 In addition, we will use the rotation periods of comoving stars identified in
 the first \Gaia\ data release \citep{oh2016} to quantify the accuracy and
 precision of gyrochronology.
 We have identified 38 stars in 19 pairs with \Gaia\ proper motions and radial
 velocities from \RAVE\ that are observable by \TESS, using {\tt tvguide}.
-Of these, 34 stars in 17 pairs are already in the CTL list.
-Because the stars in these pairs are assumed to be recently disrupted
-binaries, we expect them to have the same age and measuring their rotation
-periods will therefore provide a test of gyrochronology.
-
-% Finally, we hope to use the improved gyrochronology relations, calibrated
-% using \TESS\ data to infer the dependence of planet frequency on age and
-% position in the galaxy.
-% \kepler\ revealed tantalizing hints that exoplanets on short orbital periods
-% have larger radii and are more infrequent around young stars \citep{mann2017a,
-% mann2017b, rizzuto2017}.
-% Do these trends continue into older ages and do they exist in the field?
-% We will answer these questions by measuring rotation periods for all \TESS\
-% field stars.
+Of these, 34 stars in 17 pairs are in the CTL list.
+Since these stars would make interesting targets for both asteroseismology and
+exoplanet search, we include a list of them with this proposal.
+The stars in these pairs are assumed to be recently disrupted binaries so we
+expect them to have the same age; measuring their rotation periods will
+therefore provide a test of gyrochronology.
 
 \paragraph{Technical Feasibility}
 The extraction of a rotation period from a light curve can be as simple as
@@ -233,11 +216,11 @@ astrophysical variability in each pixel.
 We will tune this method preserve rotation signals and apply it to detect
 rotation across the FFIs.
 
-The full set of available \TESS\ FFI and two-minute cadence light curves will
-be exceedingly large and we intend to prioritize certain groups of stars for
-period analysis, calculating a simple (and computationally fast) Lomb-Scargle
-periodogram for the low priority objects and running a full probabilistic
-period analysis on the high priority targets.
+The full set of available \TESS\ FFI light curves will be exceedingly large
+and we intend to prioritize certain groups of stars for period analysis,
+calculating a simple (and computationally fast) Lomb-Scargle periodogram for
+the low priority objects and running a full probabilistic period analysis on
+the high priority targets.
 High priority targets include: comoving pairs, stars in the CVZs (especially
 those with spectra), stars in TGAS, stars at large distances, plus any
 potential asteroseismic dwarfs and exoplanet hosts.
@@ -248,21 +231,6 @@ We note, however that not all stars will have measurable rotation periods,
 even if they are bright enough --- not all stars show rotational variability
 in their light curves either because they are pole-on or because they are
 inactive.
-% Of these, the stars that also lie in the CVZs as well as the identified \Gaia\
-% comoving pairs will be our highest priority.
-% Our next priority will be stars in the CVZs, with spectra, that do not appear
-% in TGAS, followed by those without spectra.
-% M dwarfs rotation periods in the CVZz will allow us to study the rotation
-% period bimodality at lower masses, since the bimodality appears at longer
-% rotation periods for lower mass stars.
-% We will then focus on measuring rotation periods for a sample of stars that is
-% representative of the full set of FFI and CTL targets in order to enable
-% exoplanet population studies.
-% An large amount of computational resources are available to us, with access to
-% the Columbia supercomputer as well as facilities at the Flatiron Institute.
-% We expect that each target will require around one minute of computation time
-% and have access to around 10,000 computing hours.
-% We therefore expect to analyze around 60,000 light curves.
 
 We have already begun to construct a rotation period catalog of \ktwo\ stars,
 for which we have received funding from the Archival Data Analysis Program
@@ -279,14 +247,14 @@ These rotation periods were measured using a simple ACF method, applied to
 }
 
 \paragraph{Expected Impact}
-Initially we will provide rotation period posterior probability density
-functions and best fit estimates for around 30,000 high priority two-minute
-cadence and FFI targets.
-We will then produce a catalog of rotation periods for lower priority stars
-using a combination of Lomb-Scargle periodogram and autocorrelation
+Initially, we will provide rotation period posterior probability density
+functions and best fit estimates for around 30,000 high priority FFI targets.
+We will then produce a catalog of rotation periods for lower priority FFI
+stars using a combination of Lomb-Scargle periodogram and autocorrelation
 techniques.
 Finally, we will release a catalog of rotation periods for two-minute cadence
 targets.
+The full catalog will likely contain several million rotation periods.
 We will also release an open source python package for measuring rotation
 periods of both FFI and two-minute cadence targets.
 
