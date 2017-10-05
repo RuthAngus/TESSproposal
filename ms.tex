@@ -167,8 +167,8 @@ velocities from \RAVE\ that are observable by \TESS, using {\tt tvguide}.
 Of these, 34 stars in 17 pairs are in the CTL list.
 Since these stars would make interesting targets for both asteroseismology and
 exoplanet search, we include a list of them with this proposal.
-The stars in these pairs are assumed to be recently disrupted binaries so we
-expect them to have the same age; measuring their rotation periods will
+The stars in these pairs are likely recently disrupted binaries so we
+expect them to have the same age and measuring their rotation periods will
 therefore provide a test of gyrochronology.
 
 \paragraph{Technical Feasibility}
@@ -176,8 +176,8 @@ The extraction of a rotation period from a light curve can be as simple as
 computing a Lomb-Scargle periodogram or, in cases where the signal is less
 clear, can be inferred via modeling the correlation between data points.
 This latter approach could involve either computing an autocorrelation
-function \citep{mcquillan2013}, or fitting a Gaussian process to the time
-series \citep{angus2017, foreman-mackey2017}.
+function \citep[\eg][]{mcquillan2013}, or fitting a Gaussian process to the
+time series \citep{angus2017, foreman-mackey2017}.
 In cases where signals have long periods and low amplitudes, care is needed to
 separate real astrophysical signal from instrumental systematics.
 The measurement of rotation periods is less sensitive to crowding and source
@@ -191,12 +191,12 @@ Using an ensemble of sources, we will de-trend these light curves using a
 modified version of \textsf{everest} \citep{luger2016, luger2017} designed to
 preserve photometric signatures of rotation.
 This will be achieved by fitting for the systematic effects in the light curve
-using the \textsf{everest} model simultaneously with a Gaussian Process model
+using the \textsf{everest} model simultaneously with a Gaussian process model
 for the astrophysical variation.
 Both \citet{aigrain2016} and \citet{luger2016} demonstrated that this can
 preserve stellar variability signals and we will use the \textsf{celerite}
-algorithm \citep{dfm2017} to scale the computations to the size of TESS FFI
-datasets.
+algorithm \citep{foreman-mackey2017} to scale the computations to the size of
+TESS FFI datasets.
 The precision of existing photometric de-trending methods degrades in crowded
 fields \citep[for example,][]{luger2017}.
 However, to make robust measurements of rotation periods, we do not need
@@ -211,14 +211,14 @@ Instead, a causal data-driven model is built to predict the time series in
 every pixel taking systematic effects into account and the residuals between
 the observations and the model predictions provide an estimate of the
 astrophysical variability in each pixel.
-We will tune this method preserve rotation signals and apply it to detect
+We will tune this method to preserve rotation signals and apply it to detect
 rotation across the FFIs.
 
 The full set of available \TESS\ FFI light curves will be exceedingly large
 and we intend to prioritize certain groups of stars for period analysis,
 calculating a simple (and computationally fast) Lomb-Scargle periodogram for
-the low priority objects and running a full probabilistic period analysis on
-the high priority targets.
+the low priority objects and running a full probabilistic, Gaussian process
+period analysis on the high priority targets.
 High priority targets include: comoving pairs, stars in the CVZs (especially
 those with spectra), stars in TGAS, stars at large distances, plus any
 potential asteroseismic dwarfs and exoplanet hosts.
@@ -250,14 +250,18 @@ functions and best fit estimates for around 30,000 high priority FFI targets.
 We will then produce a catalog of rotation periods for lower priority FFI
 stars using a combination of Lomb-Scargle periodogram and autocorrelation
 techniques.
-Finally, we will release a catalog of rotation periods for two-minute cadence
-targets.
+Finally, we will release a catalog of rotation periods for all two-minute
+cadence targets.
 The full catalog will likely contain several million rotation periods.
+We will release code for inferring stellar ages from rotation periods, based
+on a new gyrochronology relation calibrated using \TESS\HERMES spectra, \Gaia\
+kinematics and comoving pairs.
 We will also release an open source python package for measuring rotation
 periods of both FFI and two-minute cadence targets.
 
 \paragraph{Budget Justification}
-PI Angus intends to use the budget to employ a student for 3-4 months.
+PI Angus intends to use the budget to employ an undergraduate student for 3-4
+months.
 In this time the student will assist in extracting light curves from the
 \tess\ FFIs, measuring rotation periods and building a rotation period
 catalog.
