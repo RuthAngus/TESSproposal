@@ -1,9 +1,8 @@
 \documentclass[letterpaper,12pt,preprint]{hack_aastex}
 
-% Still to do: estimate the number of 16th mag stars and brighter in the whole
-% sky.
-% Estimate computation power available.
-% Come up with a better target and priorities list.
+% Still to do: estimate the number of 16th mag stars and brighter in the TESS
+% southern sky.
+% Figure out how to incorporate the target list.
 
 \input{dfm_stylez}
 \pagestyle{myheadings}
@@ -55,7 +54,7 @@
 \title{Investigating magnetic dynamo evolution with TESS field dwarfs}
 
 Of the measurable properties for a large ensemble of field stars, rotation
-periods contain the most information about stellar age, and provide the best
+periods contain the most information about stellar age and provide the best
 leverage for advancing our knowledge of galactic archeology as well as
 exoplanet population demographics via gyrochronology.
 Angular momentum is carried away though magnetically driven stellar winds,
@@ -79,10 +78,8 @@ in the local star formation history as an explanation \citep{mcquillan2014,
 davenport2017}.
 Secondly, a transitioning magnetic dynamo appears to be responsible for
 inefficient magnetic braking at old ages in Solar-mass stars.
-{\bf We propose to answer these questions by providing a catalog of
-rotation periods for \TESS\ Full Frame Image (FFI) stars.}
-% We also intend to use gyrochronology in the cases where it {\it is} applicable
-% to learn about the evolution of exoplanets across the galaxy.
+To answer these questions {\bf we propose to provide a catalog of rotation
+periods for \TESS\ Full Frame Image (FFI) stars.}
 
 \paragraph{Scientific Justification}
 
@@ -104,22 +101,13 @@ with galactic position.
 We will match the TESS FFI targets to the upcoming second data
 release from the Gaia mission \citep{perryman2001} to map the rotation period
 distribution as a function of galactocentric position.
-For the all-sky analysis we will focus on F and G stars since the 27.5 day
-baseline of \TESS\ fields will limit measureable rotation periods to less than
-around 15 days.
-% With the April 2018 data release from Gaia (DR2), we estimate that we will be
-% able to study rotation periods for G dwarfs in the TESS FFIs out to $\sim$3
-% kpc.
-% To characterize the rotation period bimodality as a function of galactic
-% position, we propose to analyse the light curves of 10,000 FFI and two-minute
-% targets that overlap with the Tycho-Gaia Astrometric Solution (TGAS) catalog,
-% selecting FGKM dwarfs with a range of galactic positions.
-% The FFI targets will be essential in order to reach $\sim$3kpc distances.
-% Of these, the stars lying in the CVZs will be our highest priority.
+For the all-southern-hemisphere  analysis we will focus on F and G stars since
+the 27.4 day baseline of \TESS\ fields will limit measureable rotation periods
+to less than around 15 days.
 The longer time coverage in the CVZz will allow us to study the rotation
 period bimodality in K and M dwarfs, since the bimodality appears at longer
 rotation periods for these lower mass stars.
-{\bf Unlike \kepler\ and \ktwo\ light curves, \TESS\ provides the all-sky
+Unlike \kepler\ and \ktwo\ light curves, {\bf \TESS\ provides the all-sky
 coverage necessary to map the period bimodality across the galaxy.}
 
 \ssfigure{Davenport.png}{0.5}{%
@@ -146,9 +134,11 @@ than the Sun relatively unexplored.
 measurable period strongly depending on the length of time it is observed for.
 Of particular interest are the potentially long rotation periods measurable
 for stars that fall in the Continuous Viewing Zones (CVZs).
-Many of these will have spectra from the \TESS --\HERMES\ survey, from which it
-will be possible to calculate isochronal ages, enabling further calibration of
-the gyrochronology relations.
+Many of these will have spectra from the \TESS --\HERMES\ survey, from which
+it will be possible to calculate isochronal ages, enabling further calibration
+of the gyrochronology relations.
+{\bf We propose to calibrate gyrochronology at old ages for FGKM stars using
+the isochronal ages of \TESS--\hermes\ stars.}
 We will also use the rotation periods of TESS field dwarfs over the whole sky
 to test the gyrochronology relations using galactic kinematics.
 Many stars observable by \tess\ will have proper motions, parallaxes,
@@ -158,18 +148,21 @@ positions and action angles of the stars, both of which are age indicators.
 Since one of the few ways to accurately age-date fully convective, late M
 dwarfs is via kinematics, these new relations will help to infer ages for all
 stars with M$<$ 0.35M$_\odot$, to which gyrochronology cannot be applied.
+{\bf We propose to calibrate the gyrochronology relations at old ages for FGKM
+stars using vertical actions of \Gaia\ DR2 targets in the CVZ.}
 
-In addition, we will use the rotation periods of comoving stars identified in
-the first \Gaia\ data release \citep{oh2016} to quantify the accuracy and
-precision of gyrochronology.
-We have identified 38 stars in 19 pairs with \Gaia\ proper motions and radial
-velocities from \RAVE\ that are observable by \TESS, using {\tt tvguide}.
-Of these, 34 stars in 17 pairs are in the CTL list.
+We have identified 34 stars in 17 pairs with \Gaia\ proper motions and radial
+velocities from \RAVE\ that are observable by \TESS
+% \footnote{Based on {\tt tvguide}.}
+and are already in the Candidate Target List.
 Since these stars would make interesting targets for both asteroseismology and
 exoplanet search, we include a list of them with this proposal.
 The stars in these pairs are likely recently disrupted binaries so we
-expect them to have the same age and measuring their rotation periods will
+expect them to have similar ages and measuring their rotation periods will
 therefore provide a test of gyrochronology.
+{\bf We will use the rotation periods of comoving stars identified in the
+first \Gaia\ data release \citep{oh2016} to quantify the accuracy and
+precision of gyrochronology.}
 
 \paragraph{Technical Feasibility}
 The extraction of a rotation period from a light curve can be as simple as
@@ -266,7 +259,7 @@ In this time the student will assist in extracting light curves from the
 \tess\ FFIs, measuring rotation periods and building a rotation period
 catalog.
 The student will also be involved in the scientific project of their choosing:
-either the rotation period bimodality, gyrochronology of low-mass stars, or
+either the rotation period bimodality, gyrochronology of FGKM stars, or
 gyrochronology of comoving pairs.
 The remaining budget will be used for traveling to meet with other Co-Is in
 order to perform this analysis.
