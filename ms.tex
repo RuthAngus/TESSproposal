@@ -1,4 +1,5 @@
 \documentclass[letterpaper,12pt,preprint]{hack_aastex}
+
 \newcommand{\Kepler}{{\it Kepler}}
 \newcommand{\kepler}{\Kepler}
 \newcommand{\corot}{{\it CoRoT}}
@@ -37,7 +38,11 @@
 \markright{\textsf{\footnotesize %
     Investigating rotational evolution with \TESS\ FFI field dwarfs}}
 
+\setlength{\bibsep}{0.0pt}
+\setlength{\itemsep}{0pt}
+\setcitestyle{notesep={ },aysep={}}
 \bibliographystyle{aasjournal}
+
 
 \begin{document}
 
@@ -265,10 +270,14 @@ or gyrochronology of comoving pairs.
 The remaining budget will be used for bringing all Co-Is together in order
 to make and execute analysis plans and for presenting the results at
 conferences.
-\paragraph{References}
 
+\begin{multicols}{2}
+
+\renewcommand{\baselinestretch}{0.8}
 {\footnotesize
 \bibliography{references}
 }
+
+\end{multicols}
 
 \end{document}
