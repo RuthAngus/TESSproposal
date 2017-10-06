@@ -103,10 +103,11 @@ coverage necessary to map the period bimodality across the galaxy.}
 
 \ssfigure{Davenport.png}{0.5}{%
 From Davenport (2017).
-    Rotation period as a function of effective
-temperature for the full McQuillan et al., (2014) \Kepler\ sample in black, and
-the subset of these stars that also feature in the TGAS Gaia DR1 catalogue in
-blue. Contaminating giants have been removed from the blue sample and the
+    Rotation period as a function of effective temperature for the full
+McQuillan et al., (2014) \Kepler\ sample in black, and the subset of these
+stars that also feature in the Tycho-Gaia Astrometric Solution (TGAS) Gaia DR1
+catalog in blue. Contaminating giants have been removed from the blue sample
+and the
 rotation period bimodality is revealed to exist across all temperatures shown.
     The red line is a 600 Myr rotational isochrone (also known as a gyrochrone).
 \label{fig:davenport}
@@ -122,7 +123,7 @@ Further calibration is needed however; a lack of rotation periods and reliable
 ages for old and low-mass stars leaves the rotational evolution of stars older
 than the Sun relatively unexplored.
 \TESS\ will provide thousands of new {\it long } rotation periods for stars
-that fall in the CVZ.
+that fall in the CVZs.
 Many of these will have spectra from the \TESS --\HERMES\ survey, from which
 it will be possible to calculate isochronal ages, enabling further calibration
 of the gyrochronology relations.
@@ -221,10 +222,9 @@ magnitude.
 We note however that not all stars will have measurable rotation periods:
 even if they are bright enough not all stars show rotational variability in
 their light curves either because they are pole-on or inactive.
-We will vet incorrect rotation period measurements using a combination of a
-Lomb-Scargle periodogram and an autocorrelation function by
-training on a set of light curves with a range of variability amplitudes and
-known periods.
+We will vet incorrect rotation period measurements by training our algorithms
+on a set of light curves with a range of variability amplitudes and known
+periods.
 Based on the fraction of stars with measurable rotation periods in
 \citet{mcquillan2014}, and the more restrictive baseline of \tess\ relative to
 \kepler, we predict that the final catalog will contain around one million
