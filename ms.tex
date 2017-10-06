@@ -27,13 +27,10 @@
 \newcommand{\numax}{$\nu_{\mathrm{max}}$}
 \newcommand{\racomment}[1]{{\color{red}#1}}
 
-% Still to do: estimate the number of 16th mag stars and brighter in the TESS
-% southern sky. ~ 15 million, call it 10.
-% Cite the sullivan paper.
 % Figure out how to incorporate the target list.
 % Get detection probabilities for stars on the list
 % Calculate the distance at which you get a ~ 15th mag at ~1kpc
-% Mention vetting.
+% Shorten.
 
 \input{dfm_stylez}
 \pagestyle{myheadings}
@@ -72,7 +69,7 @@ in the local star formation history as an explanation \citep{mcquillan2014,
 davenport2017}.
 Secondly, a transitioning magnetic dynamo appears to be responsible for
 inefficient magnetic braking at old ages in Solar-mass stars
-\citep{vansaders2016}.
+\citep{van-saders2016}.
 To answer these questions {\bf we propose to provide a catalog of rotation
 periods for \TESS\ Full Frame Image (FFI) stars.}
 
@@ -136,8 +133,8 @@ of the gyrochronology relations.
 the isochronal ages of \TESS--\hermes\ stars.}
 We will also use the rotation periods of \TESS\ field dwarfs over the whole sky
 to test the gyrochronology relations using galactic kinematics.
-Many stars observable by \tess\ will have proper motions, parallaxes,
-positions and radial velocities published in the second \Gaia\ data release.
+Many \tess\ FFI targets will have proper motions, parallaxes, positions and
+radial velocities published in the second \Gaia\ data release.
 These parameters provide the information necessary to calculate galactocentric
 positions and action-angle coordinates of the stars, both of which are age
 indicators.
@@ -213,19 +210,21 @@ period analysis on the high priority targets.
 High priority targets will include: comoving pairs, stars in the CVZ
 (especially those with spectra), stars in TGAS, stars at large distances, plus
 any potential asteroseismic dwarfs and exoplanet hosts.
+The number of high priority targets with probabilistic rotation periods will
+be limited by computation power, but we conservatively estimate that we can
+produce full rotation period posterior PDFs for $\sim$ 30,000 stars.
 Based on the expected photometric precision of \tess\ \citep{sullivan2015}, we
 expect to be able to measure rotation periods for FFI stars down to 15th
 magnitude.
 We note, however that not all stars will have measurable rotation periods,
-even if they are bright enough --- not all stars show rotational variability
-in their light curves either because they are pole-on or because they are
-inactive.
+even if they are bright enough not all stars show rotational variability in
+their light curves either because they are pole-on or inactive.
 We will vet incorrect rotation period measurements using a combination of a
 Lomb-Scargle periodogram and an autocorrelation function by
 training on a set of light curves with a range of variability amplitudes and
 periods.
 However, based on the high success rates of a Lomb-Scargle periodogram method
-with high-pass filtered light curve and the Gaussian process method
+with high-pass filtered light curve and the Gaussian process method,
 demonstrated in \citet{angus2017}, we expect a low rate of incorrect rotation
 periods.
 
@@ -245,29 +244,25 @@ These rotation periods were measured using a simple ACF method, applied to
 
 \paragraph{Expected Impact}
 We will provide rotation period posterior probability density functions and
-best fit estimates for around 30,000 high priority FFI targets rotation
-periods point estimates for lower priority FFI stars using a combination of
-Lomb-Scargle periodogram and autocorrelation techniques.
-% Finally, we will release a catalog of rotation periods for all two-minute
-% cadence targets.
-The full catalog will contain several million rotation periods.
-We will release code for inferring stellar ages from rotation periods, based
-on a new gyrochronology relation calibrated using \TESS -- \HERMES spectra,
-\Gaia\ kinematics and comoving pairs.
-We will also release an open source python package for measuring rotation
-periods of \tess\ FFI targets.
+best fit estimates for $\sim$ 30,000 high priority FFI targets rotation
+periods and point estimates for $\sim$ 10 million lower priority FFI stars
+using a combination of Lomb-Scargle periodogram and autocorrelation
+techniques.
+We will release an open source python package for measuring rotation periods
+of \tess\ FFI targets plus code for inferring stellar ages from rotation
+periods, based on a new gyrochronology relation calibrated using \TESS --
+\HERMES spectra, \Gaia\ kinematics and comoving pairs.
 
 \paragraph{Budget Justification}
-PI Angus intends to use the budget to employ an undergraduate student for 3-4
-months.
-In this time the student will assist in extracting light curves from the
-\tess\ FFIs, measuring rotation periods and building a rotation period
-catalog.
-The student will also be involved in the scientific project of their choosing:
-either the rotation period bimodality, gyrochronology of FGKM stars, or
-gyrochronology of comoving pairs.
-The remaining budget will be used for traveling to meet with other Co-Is in
-order to perform this analysis.
+PI Angus will employ two undergraduate students for 3-4 months who will assist
+in extracting light curves from the \tess\ FFIs, measuring rotation periods
+and building a rotation period catalog.
+These students will also be involved in the scientific project of their
+choosing: either the rotation period bimodality, gyrochronology of FGKM stars,
+or gyrochronology of comoving pairs.
+The remaining budget will be used for a bringing all Co-Is together in order
+to make and execute analysis plans and for presenting the results at
+conferences.
 \paragraph{References}
 
 {\footnotesize
