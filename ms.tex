@@ -29,11 +29,10 @@
 
 % Still to do: estimate the number of 16th mag stars and brighter in the TESS
 % southern sky. ~ 15 million, call it 10.
+% Cite the sullivan paper.
 % Figure out how to incorporate the target list.
 % Get detection probabilities for stars on the list
-% Apply Derek's corrections
 % Calculate the distance at which you get a ~ 15th mag at ~1kpc
-% cite the sullivan paper.
 % Mention vetting.
 
 \input{dfm_stylez}
@@ -100,9 +99,9 @@ distribution as a function of galactocentric position.
 For the all-southern-hemisphere  analysis we will focus on F and G stars since
 the 27.4 day baseline of \TESS\ fields will limit measurable rotation periods
 to less than around 15 days.
-The longer time coverage in the CVZ will allow us to study the rotation
-period bimodality in K and M dwarfs, since the bimodality appears at longer
-rotation periods for these lower mass stars.
+The longer time coverage in the Continuous Viewing Zone (CVZ) will allow us to
+study the rotation period bimodality in K and M dwarfs, since the bimodality
+appears at longer rotation periods for these lower mass stars.
 Unlike \kepler\ and \ktwo\ light curves, {\bf \TESS\ provides the all-sky
 coverage necessary to map the period bimodality across the galaxy.}
 
@@ -129,7 +128,7 @@ than the Sun relatively unexplored.
 \TESS\ will provide thousands of new rotation periods, with the maximum
 measurable period strongly depending on the length of time it is observed for.
 Of particular interest are the potentially long rotation periods measurable
-for stars that fall in the Continuous Viewing Zones (CVZs).
+for stars that fall in the CVZ.
 Many of these will have spectra from the \TESS --\HERMES\ survey, from which
 it will be possible to calculate isochronal ages, enabling further calibration
 of the gyrochronology relations.
@@ -205,21 +204,30 @@ astrophysical variability in each pixel.
 We will tune this method to preserve rotation signals and apply it to detect
 rotation across the FFIs.
 
-The full set of available \TESS\ FFI light curves will be exceedingly large
-and we intend to prioritize certain groups of stars for period analysis,
+Based on \citet{sullivan2015}, we expect around 10 million \TESS\ FFI
+targets brighter than 15th magnitude in the southern ecliptic hemisphere.
+We intend to prioritize certain groups of stars for period analysis,
 calculating a simple (and computationally fast) Lomb-Scargle periodogram for
 the low priority objects and running a full probabilistic, Gaussian process
 period analysis on the high priority targets.
-High priority targets include: comoving pairs, stars in the CVZs (especially
-those with spectra), stars in TGAS, stars at large distances, plus any
-potential asteroseismic dwarfs and exoplanet hosts.
+High priority targets will include: comoving pairs, stars in the CVZ
+(especially those with spectra), stars in TGAS, stars at large distances, plus
+any potential asteroseismic dwarfs and exoplanet hosts.
 Based on the expected photometric precision of \tess\ \citep{sullivan2015}, we
-expect to be able to measure rotation periods for FFI stars down to 16th
+expect to be able to measure rotation periods for FFI stars down to 15th
 magnitude.
 We note, however that not all stars will have measurable rotation periods,
 even if they are bright enough --- not all stars show rotational variability
 in their light curves either because they are pole-on or because they are
 inactive.
+We will vet incorrect rotation period measurements using a combination of a
+Lomb-Scargle periodogram and an autocorrelation function by
+training on a set of light curves with a range of variability amplitudes and
+periods.
+However, based on the high success rates of a Lomb-Scargle periodogram method
+with high-pass filtered light curve and the Gaussian process method
+demonstrated in \citet{angus2017}, we expect a low rate of incorrect rotation
+periods.
 
 We have already begun to construct a rotation period catalog of \ktwo\ stars,
 for which we have received funding from the Archival Data Analysis Program
